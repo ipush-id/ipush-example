@@ -1,0 +1,22 @@
+{
+    "name": "zuramai/ipush-test",
+    "autoload": {
+        "psr-4": {
+            "Zuramai\\IpushTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zuramai",
+            "email": "saugi.dev@gmail.com"
+        }
+    ],
+    "scripts": {
+        "serve": [
+            "php -S localhost:8000 -t src"
+        ]
+    },
+    "require": {
+        "zuramai/ipush": "^1.0"
+    }
+}

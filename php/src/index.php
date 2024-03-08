@@ -3,10 +3,14 @@ include "../vendor/autoload.php";
 use Zuramai\Ipush\Ipush;
 
 $ipush = new Ipush(
+    // API URL
     "wss://api.ipush.id/ws",
-    "7fa9d1ba-93ff-42eb-9a9b-b0b0e33d6ad0",
-    "3b39c1f4671e0c029998ebb33742755ced7aeaac466e2f6c0491b348",
-    "218fe3a0717462e903c8c51eaba6fec7d77b25c2d56c1f493ae1b3da"
+    // APP ID
+    "970a7dd0-cb3b-4c9f-bfed-da1d6b4b40c2",
+    // API KEY
+    "a6f8dfc65c46ab2b2ad0d68fe9c97610a9da4fe149bd52de965e2197",
+    // API SECRET
+    "8a7c5275b5e76e6b554ce6af1a4161f44a33e6408203e206daa6a482"
 );
 
 
@@ -14,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $product = $_POST['product'];
     $price = $_POST['price'];
 
-    $ipush->trigger("notifications", "payment-success", [
+    $ipush->trigger("my-channel", "my-event", [
         'product' => $product,
         'price' => $price,
     ]);

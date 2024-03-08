@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Ipush JS Demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
@@ -13,20 +13,19 @@
         <ul class="list-group">
         </ul>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script type="module">
+    <script src="https://cdn.jsdelivr.net/npm/ipush-js@0.0.3/dist/index.global.js"></script>
 
-      import { Ipush } from 'https://cdn.jsdelivr.net/npm/ipush-js@0.0.3/+esm'
+    <script>
       const WS_URL = "wss://api.ipush.id/ws"
 
-      const socket = new Ipush("7fa9d1ba-93ff-42eb-9a9b-b0b0e33d6ad0", {
+      const socket = new IpushInit.Ipush("970a7dd0-cb3b-4c9f-bfed-da1d6b4b40c2", {
           serverUrl: WS_URL
       })
 
-      socket.subscribe('notifications')
+      socket.subscribe('my-channel')
       const listGroupElement = document.querySelector('.list-group')
 
-      socket.bind('payment-success', (msg) => {
+      socket.bind('my-event', (msg) => {
         const data = JSON.parse(msg.data)
         console.log(data)
         const el = `

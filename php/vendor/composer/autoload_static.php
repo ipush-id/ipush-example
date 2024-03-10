@@ -9,7 +9,6 @@ class ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8
     public static $prefixLengthsPsr4 = array (
         'Z' => 
         array (
-            'Zuramai\\Ipush\\' => 14,
             'Zuramai\\IpushTest\\' => 18,
         ),
         'W' => 
@@ -20,15 +19,16 @@ class ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'Phrity\\Util\\' => 12,
             'Phrity\\Net\\' => 11,
+        ),
+        'I' => 
+        array (
+            'Ipush\\' => 6,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Zuramai\\Ipush\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zuramai/ipush/src',
-        ),
         'Zuramai\\IpushTest\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -46,14 +46,18 @@ class ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Phrity\\Util\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phrity/util-errorhandler/src',
+        ),
         'Phrity\\Net\\' => 
         array (
             0 => __DIR__ . '/..' . '/phrity/net-uri/src',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/phrity/util-errorhandler/src',
+        'Ipush\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ipush/ipush/src',
+        ),
     );
 
     public static $classMap = array (
@@ -65,7 +69,6 @@ class ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit477c860c0a92116e03edcc5dd4ed08d8::$classMap;
 
         }, null, ClassLoader::class);

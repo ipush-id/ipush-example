@@ -17,6 +17,6 @@
         ]
     },
     "require": {
-        "zuramai/ipush": "^1.0"
+        "ipush/ipush": "^1.0.1"
     }
 }

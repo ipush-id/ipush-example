@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "681587e36eaa3a4689784ceb045a98da",
+    "content-hash": "8247e22f3cc9857c565c35cdb48a8e54",
     "packages": [
+        {
+            "name": "ipush/ipush",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ipush-id/ipush-php.git",
+                "reference": "55352598e49d6b3a0537ab84f44459ac725a57d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ipush-id/ipush-php/zipball/55352598e49d6b3a0537ab84f44459ac725a57d0",
+                "reference": "55352598e49d6b3a0537ab84f44459ac725a57d0",
+                "shasum": ""
+            },
+            "require": {
+                "textalk/websocket": "^1.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ipush\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "zuramai",
+                    "email": "saugi.dev@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/ipush-id/ipush-php/issues",
+                "source": "https://github.com/ipush-id/ipush-php/tree/v1.0.1"
+            },
+            "time": "2024-03-10T08:11:42+00:00"
+        },
         {
             "name": "phrity/net-uri",
             "version": "1.3.0",
@@ -63,30 +105,30 @@
         },
         {
             "name": "phrity/util-errorhandler",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirn-se/phrity-util-errorhandler.git",
-                "reference": "dc9ac8fb70d733c48a9d9d1eb50f7022172da6bc"
+                "reference": "4016d9f9615a4c602f525b0542e4835e316a42e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirn-se/phrity-util-errorhandler/zipball/dc9ac8fb70d733c48a9d9d1eb50f7022172da6bc",
-                "reference": "dc9ac8fb70d733c48a9d9d1eb50f7022172da6bc",
+                "url": "https://api.github.com/repos/sirn-se/phrity-util-errorhandler/zipball/4016d9f9615a4c602f525b0542e4835e316a42e4",
+                "reference": "4016d9f9615a4c602f525b0542e4835e316a42e4",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0"
+                "php": "^7.4 | ^8.0"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "^8.0|^9.0",
+                "phpunit/phpunit": "^9.0 | ^10.0 | ^11.0",
                 "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "": "src/"
+                    "Phrity\\Util\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -108,9 +150,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sirn-se/phrity-util-errorhandler/issues",
-                "source": "https://github.com/sirn-se/phrity-util-errorhandler/tree/1.0.1"
+                "source": "https://github.com/sirn-se/phrity-util-errorhandler/tree/1.1.0"
             },
-            "time": "2022-10-27T12:14:42+00:00"
+            "time": "2024-03-05T19:32:14+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -320,48 +362,6 @@
                 "source": "https://github.com/Textalk/websocket-php/tree/1.6.3"
             },
             "time": "2022-11-07T18:59:33+00:00"
-        },
-        {
-            "name": "zuramai/ipush",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zuramai/ipush-php.git",
-                "reference": "6e653b0ac83433a773fa5906aaa1f1e835533df5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zuramai/ipush-php/zipball/6e653b0ac83433a773fa5906aaa1f1e835533df5",
-                "reference": "6e653b0ac83433a773fa5906aaa1f1e835533df5",
-                "shasum": ""
-            },
-            "require": {
-                "textalk/websocket": "^1.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^11.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Zuramai\\Ipush\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "zuramai",
-                    "email": "saugi.dev@gmail.com"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/zuramai/ipush-php/issues",
-                "source": "https://github.com/zuramai/ipush-php/tree/v1.0.0"
-            },
-            "time": "2024-02-29T00:39:17+00:00"
         }
     ],
     "packages-dev": [],

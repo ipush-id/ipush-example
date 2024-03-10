@@ -1,16 +1,16 @@
 <?php 
 include "../vendor/autoload.php";
-use Zuramai\Ipush\Ipush;
+use Ipush\Ipush;
 
 $ipush = new Ipush(
     // API URL
-    "wss://api.ipush.id/ws",
+    "ws://localhost:3000/ws",
     // APP ID
-    "970a7dd0-cb3b-4c9f-bfed-da1d6b4b40c2",
+    "e8f272e3-8fe2-47d8-a914-f7887f69c0a6",
     // API KEY
-    "a6f8dfc65c46ab2b2ad0d68fe9c97610a9da4fe149bd52de965e2197",
+    "51633001e1f666255830eac035a4162b715af63323055e803b962e13",
     // API SECRET
-    "8a7c5275b5e76e6b554ce6af1a4161f44a33e6408203e206daa6a482"
+    "51633001e1f666255830eac035a4162b715af63323055e803b962e13"
 );
 
 
